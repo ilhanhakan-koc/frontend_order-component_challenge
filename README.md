@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://htmlpreview.github.io/?https://github.com/ilhanhakan-koc/frontend_order-component_challenge/blob/main/index.html)
 
 ## My process
 
