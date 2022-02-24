@@ -22,8 +22,8 @@
 }
 
 body {
-    background: url(images/pattern-background-desktop.svg);
-    background-repeat: repeat-x;
+    background: url(images/pattern-background-desktop.svg) no-repeat top center;
+    background-size: contain;
     background-color: var(--clr-primary-pblue);
     font-family: var(--ff-primary);
     min-height: 100vh;
@@ -63,6 +63,7 @@ a {
 .main__card--header img {
     width: 100%;
     border-radius: 1.2em 1.2em 0 0;
+    cursor: pointer;
 }
 
 .main__card--grid {
@@ -91,13 +92,16 @@ a {
     border-radius: 1em;
 }
 
-.main__card--price img {
+.main__card--image {
+    width: 20%;
     padding-left: 1.5em;
+    cursor: pointer;
 }
 
-.main__card--price ul {
+.main__card--list {
     list-style: none;
-    padding-left: 1.2em;
+    padding: 0 3em 0 0;
+    width: 50%;
 }
 
 .main__card--textanual {
@@ -110,21 +114,20 @@ a {
     margin-top: .2em;
 }
 
-.main__card--price a {
-    text-decoration: underline;
-    padding-left: 6em;
-    color: blue;
+.main__card--change {
+    width: 30%;
 }
 
-.main__card--price a p {
+.main__card--change a {
+    text-decoration: underline;
     color: blue;
     font-weight: var(--fw-light);
-    transition: all 500ms ease-in-out;
+    
 }
 
-.main__card--price a p:hover{
+.main__card--change a:hover{
     text-decoration: none;
-    color: rgb(98, 0, 226);
+    color: rgb(98, 0, 226);  
 }
 
 .main__card--buttons button {
@@ -148,7 +151,7 @@ a {
 .main__card--buttons p {
     padding-top: 1em;
     font-weight: var(--fw-bold);
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .main__card--buttons p:hover {
@@ -156,53 +159,6 @@ a {
     cursor: pointer;
 }
 
-@media screen and (max-width: 450px) {
-    .main__card--price a {
-        padding-left: 5.8em;
-    }
-}
-
-@media screen and (max-width: 435px) {
-    .main__card--price a {
-        padding-left: 5em;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .main__card--price a {
-        padding-left: 4em;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .main__card--price a {
-        padding-left: 3em;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .main__card--price a {
-        padding-left: 2em;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .main__card--price a {
-        padding-left: 1em;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    .main__card--price a {
-        padding-left: 0.5em;
-    }
-}
-
-@media screen and (max-width: 325px) {
-    .main__card--price a {
-        display: none;
-    }
-}
 
 .attribution { font-size: 11px; text-align: center;}
 .attribution a { color: rgb(0, 144, 228); }
